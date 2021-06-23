@@ -1,5 +1,5 @@
-package R2.Personajes;
-
+package R2.Personajes.Heroes;
+import R2.Personajes.*;
 public class Heroe extends Base{
     private static int ataqueMaximo = 100;
     private static int instanciasHeroes;
