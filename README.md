@@ -14,5 +14,5 @@ java -cp ./build R2.Principal.Principal
 ## Ejecutar .JAR
 
 ```bash
-java -jar SeniorAnillos.jar
+java -jar Anillos.jar
 ```
