@@ -5,15 +5,18 @@ public class Base {
     protected int armadura;
     protected int ataque;
     protected String nombre;
+    protected int ganados;
+    protected int dados;
     protected boolean esHeroe;
 
     private static int instanciasPersonajes;
 
-    public Base(int vida, int armadura, int ataque, String nombre, boolean esHeroe) {
+    public Base(String nombre, int vida, int ataque, int armadura, int dados, boolean esHeroe) {
         this.vida = vida;
         this.ataque = ataque;
         this.armadura = armadura;
         this.nombre = nombre;
+        this.dados = dados;
         this.esHeroe = esHeroe;
         instanciasPersonajes++;
     }
@@ -38,11 +41,6 @@ public class Base {
         }
         System.out.println(" "+atacante.getNombre()+  " ataco a  " + this.getNombre() + " hizo daño: " + danyoRecibido  + " le queda vida: "+this.getVida());
     }
-
-    public void saludar(){
-        System.out.println("Hola soy " + this.nombre);
-    }
-
     public int getVida() {
         return this.vida;
     }
@@ -66,5 +64,17 @@ public class Base {
     public static int getInstancias(){
         return Base.instanciasPersonajes;
     }
+    public int getGanados() {
+        return ganados;
+    }
 
+    public void setGanados(int ganados) {
+        this.ganados = ganados;
+    }
+    public void setArmadura(int armadura) {
+        this.armadura = armadura;
+    }
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
 }
